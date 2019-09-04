@@ -25,7 +25,7 @@ class Compiler
         echo "Compile starting...\n";
 
         $code = '';
-
+                
         if ( ! $this->isDev()) {
             foreach ($this->yieldFiles($this->COMPONENTS_DIR) as $filePath) {
                 if (\is_dir($filePath) || false === \strpos($filePath, '.php')) {
